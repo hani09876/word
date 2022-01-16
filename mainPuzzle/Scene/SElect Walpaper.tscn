@@ -1,0 +1,337 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://Scene Code/SElect Walpaper.gd" type="Script" id=1]
+[ext_resource path="res://images/wallpaper/h.jpg" type="Texture" id=2]
+[ext_resource path="res://Font/Ultra-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Scene Code/Buy _wallpaper.tres" type="ButtonGroup" id=4]
+[ext_resource path="res://images/wallpaper/a.jpg" type="Texture" id=5]
+[ext_resource path="res://images/wallpaper/d.jpg" type="Texture" id=6]
+[ext_resource path="res://images/wallpaper/c.jpg" type="Texture" id=8]
+[ext_resource path="res://images/wallpaper/g.jpg" type="Texture" id=9]
+[ext_resource path="res://images/wallpaper/f.jpg" type="Texture" id=10]
+[ext_resource path="res://images/wallpaper/e.jpg" type="Texture" id=11]
+[ext_resource path="res://images/logo/buy.png" type="Texture" id=12]
+[ext_resource path="res://images/wallpaper/popup.png" type="Texture" id=13]
+[ext_resource path="res://Font/MaldiniBold-EaqGW.otf" type="DynamicFontData" id=14]
+[ext_resource path="res://images/logo/lavel button.png" type="Texture" id=15]
+[ext_resource path="res://animation/Sceneepop.tres" type="Animation" id=16]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 60
+outline_size = 3
+outline_color = Color( 1, 0, 0, 1 )
+font_data = ExtResource( 14 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+group = ExtResource( 4 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+margin_left = 24.0
+margin_top = 96.0
+margin_right = 586.0
+margin_bottom = 1015.0
+scroll_horizontal_enabled = false
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="ScrollContainer"]
+margin_right = 533.0
+margin_bottom = 1487.0
+grow_horizontal = 2
+custom_constants/vseparation = 29
+custom_constants/hseparation = 33
+columns = 2
+
+[node name="a" type="TextureRect" parent="ScrollContainer/GridContainer"]
+margin_right = 250.0
+margin_bottom = 350.0
+rect_min_size = Vector2( 250, 350 )
+texture = ExtResource( 5 )
+expand = true
+
+[node name="a" type="Button" parent="ScrollContainer/GridContainer/a"]
+margin_left = 63.7202
+margin_top = 299.666
+margin_right = 195.72
+margin_bottom = 365.666
+group = ExtResource( 4 )
+icon = ExtResource( 12 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="ScrollContainer/GridContainer/a/a"]
+margin_left = 19.3905
+margin_top = 13.5477
+margin_right = 111.39
+margin_bottom = 53.5477
+custom_fonts/font = SubResource( 1 )
+text = "3000"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="c" type="TextureRect" parent="ScrollContainer/GridContainer"]
+margin_left = 283.0
+margin_right = 533.0
+margin_bottom = 350.0
+rect_min_size = Vector2( 250, 350 )
+texture = ExtResource( 8 )
+expand = true
+
+[node name="c" type="Button" parent="ScrollContainer/GridContainer/c"]
+margin_left = 58.958
+margin_top = 299.666
+margin_right = 190.958
+margin_bottom = 365.666
+group = ExtResource( 4 )
+icon = ExtResource( 12 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="ScrollContainer/GridContainer/c/c"]
+margin_left = 23.9813
+margin_top = 13.6091
+margin_right = 107.981
+margin_bottom = 53.6091
+custom_fonts/font = SubResource( 1 )
+text = "1500"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="d" type="TextureRect" parent="ScrollContainer/GridContainer"]
+margin_top = 379.0
+margin_right = 250.0
+margin_bottom = 729.0
+rect_min_size = Vector2( 250, 350 )
+texture = ExtResource( 6 )
+expand = true
+
+[node name="d" type="Button" parent="ScrollContainer/GridContainer/d"]
+margin_left = 63.7202
+margin_top = 299.666
+margin_right = 195.72
+margin_bottom = 365.666
+group = ExtResource( 4 )
+icon = ExtResource( 12 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="Label" parent="ScrollContainer/GridContainer/d/d"]
+margin_left = 20.869
+margin_top = 16.2787
+margin_right = 112.869
+margin_bottom = 56.2787
+custom_fonts/font = SubResource( 1 )
+text = "3000"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="e" type="TextureRect" parent="ScrollContainer/GridContainer"]
+margin_left = 283.0
+margin_top = 379.0
+margin_right = 533.0
+margin_bottom = 729.0
+rect_min_size = Vector2( 250, 350 )
+texture = ExtResource( 11 )
+expand = true
+
+[node name="e" type="Button" parent="ScrollContainer/GridContainer/e"]
+margin_left = 63.7202
+margin_top = 299.666
+margin_right = 195.72
+margin_bottom = 365.666
+group = ExtResource( 4 )
+icon = ExtResource( 12 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label5" type="Label" parent="ScrollContainer/GridContainer/e/e"]
+margin_left = 18.8491
+margin_top = 14.2669
+margin_right = 109.849
+margin_bottom = 54.2669
+custom_fonts/font = SubResource( 1 )
+text = "4000"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="f" type="TextureRect" parent="ScrollContainer/GridContainer"]
+margin_top = 758.0
+margin_right = 250.0
+margin_bottom = 1108.0
+rect_min_size = Vector2( 250, 350 )
+texture = ExtResource( 10 )
+expand = true
+
+[node name="f" type="Button" parent="ScrollContainer/GridContainer/f"]
+margin_left = 63.7202
+margin_top = 299.666
+margin_right = 195.72
+margin_bottom = 365.666
+group = ExtResource( 4 )
+icon = ExtResource( 12 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label6" type="Label" parent="ScrollContainer/GridContainer/f/f"]
+margin_left = 19.7532
+margin_top = 12.5853
+margin_right = 109.753
+margin_bottom = 52.5853
+custom_fonts/font = SubResource( 1 )
+text = "3500"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="g" type="TextureRect" parent="ScrollContainer/GridContainer"]
+margin_left = 283.0
+margin_top = 758.0
+margin_right = 533.0
+margin_bottom = 1108.0
+rect_min_size = Vector2( 250, 350 )
+texture = ExtResource( 9 )
+expand = true
+
+[node name="g" type="Button" parent="ScrollContainer/GridContainer/g"]
+margin_left = 63.7202
+margin_top = 299.666
+margin_right = 195.72
+margin_bottom = 365.666
+group = ExtResource( 4 )
+icon = ExtResource( 12 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label7" type="Label" parent="ScrollContainer/GridContainer/g/g"]
+margin_left = 19.1098
+margin_top = 13.9272
+margin_right = 124.109
+margin_bottom = 53.9272
+custom_fonts/font = SubResource( 1 )
+text = "6000"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="h" type="TextureRect" parent="ScrollContainer/GridContainer"]
+margin_top = 1137.0
+margin_right = 250.0
+margin_bottom = 1487.0
+rect_min_size = Vector2( 250, 350 )
+texture = ExtResource( 2 )
+expand = true
+
+[node name="h" type="Button" parent="ScrollContainer/GridContainer/h"]
+margin_left = 63.7202
+margin_top = 299.666
+margin_right = 195.72
+margin_bottom = 365.666
+group = ExtResource( 4 )
+icon = ExtResource( 12 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label8" type="Label" parent="ScrollContainer/GridContainer/h/h"]
+margin_left = 19.1412
+margin_top = 12.9421
+margin_right = 124.141
+margin_bottom = 52.9421
+custom_fonts/font = SubResource( 1 )
+text = "4000"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = -2.66968
+margin_top = 5.03969
+margin_right = 596.33
+margin_bottom = 87.0397
+custom_fonts/font = SubResource( 2 )
+text = "Point:"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="err" type="Sprite" parent="."]
+visible = false
+position = Vector2( 276.177, 514.784 )
+scale = Vector2( 0.75, 0.8 )
+texture = ExtResource( 13 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="err"]
+anims/epop = ExtResource( 16 )
+
+[node name="Button" type="Button" parent="err"]
+margin_left = -77.4404
+margin_top = 149.326
+margin_right = 108.56
+margin_bottom = 286.326
+icon = ExtResource( 15 )
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="err/Button"]
+margin_left = 33.7798
+margin_top = 23.646
+margin_right = 144.78
+margin_bottom = 99.646
+custom_fonts/font = SubResource( 3 )
+text = "Yes"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="err"]
+margin_left = -239.933
+margin_top = -128.722
+margin_right = 250.067
+margin_bottom = 26.2777
+custom_fonts/font = SubResource( 3 )
+text = "Do you want to 
+Buy this?"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="pressed" from="err/Button" to="." method="_on_Button_pressed"]
