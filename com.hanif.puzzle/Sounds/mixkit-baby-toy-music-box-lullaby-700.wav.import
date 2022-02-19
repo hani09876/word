@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/mixkit-baby-toy-music-box-lullaby-700.wav-00801fbb1cf421f3e11e3d0309db2838.sample"
+
+[deps]
+
+source_file="res://Sounds/mixkit-baby-toy-music-box-lullaby-700.wav"
+dest_files=[ "res://.import/mixkit-baby-toy-music-box-lullaby-700.wav-00801fbb1cf421f3e11e3d0309db2838.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
